@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step Progress Bar</title>
+  <link rel="stylesheet" href="task5.css">
+</head>
+<body>
+  <div class="container">
+    <div class="progress-container">
+      <div class="progress" id="progress"></div>
+      <div class="circle active"><span class="icon">✔</span><span class="label">Start</span></div>
+      <div class="circle"><span class="icon">✖</span><span class="label">Step 1</span></div>
+      <div class="circle"><span class="icon">✖</span><span class="label">Step 2</span></div>
+      <div class="circle"><span class="icon">✖</span><span class="label">Step 3</span></div>
+      <div class="circle"><span class="icon">✖</span><span class="label">Done</span></div>
+    </div>
+
+    <div class="buttons">
+      <button id="prev" disabled>⬅</button>
+      <button id="next">➡</button>
+    </div>
+  </div>
+
+  <script src="task5.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+  background-color: yellow;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 600px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.progress {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  background-color: green;
+  z-index: -1;
+  width: 0%;
+  transform: translateY(-50%);
+  transition: 0.3s ease;
+}
+
+.circle {
+  background-color: white;
+  border: 3px solid #ccc;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-weight: bold;
+}
+
+.circle .icon {
+  font-size: 18px;
+}
+
+.circle .label {
+  position: absolute;
+  top: 50px;
+  font-size: 13px;
+ 
+  
+}
+.circle .label:active{
+color: green;
+opacity:1;
+}
+
+
+.circle.active {
+  border-color: green;
+  color: green;
+}
+
+.buttons button {
+  background-color: rebeccapurple;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.buttons button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
